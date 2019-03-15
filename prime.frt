@@ -26,8 +26,19 @@
         0 = if 0 else drop 1 then
         then 
     then
-then ;
+then
+
+( 12 prime -- answer 0 )
+(  5 prime -- answer 1 )
+(   0 means is not prime, 1 means is prime )
+;
 
 : primeallot ( number )
     prime cell% allot swap over !
+
+( 4 primeallot -- . -- 6833032 -- 6833032 c@ -- 0 )
+(  0 meeans is not prime )
+
+( 5 primeallot -- . -- 6833040 -- 6833040 c@ -- 1 )
+(  1 means is prime  )
 ;
