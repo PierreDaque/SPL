@@ -1,3 +1,4 @@
+: inc 1 + ; 
 : concat 
 swap dup count >r over count r@ 
 + inc heap-alloc 
